@@ -1,0 +1,14 @@
+%h1 Products of #{@category.name}
+
+.content
+  %table.data
+    %tr
+      %th Model
+      %th Name
+    - for product in @products
+      %tr
+        %td= product.model
+        %td= link_to product.name, category_product_path(@category, product)
+  .actions
+    = link_to 'Add', :action => 'new'
+

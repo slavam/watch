@@ -1,0 +1,12 @@
+%h1 Categories
+
+.content
+  %table.data
+    %tr
+      %th Name
+    - for category in @categories
+      %tr
+        %td 
+          = link_to category.name, :action => 'show', :id => category
+  .actions
+    = link_to 'Add', :action => 'new'

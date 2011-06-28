@@ -1,0 +1,24 @@
+%h1
+  = submit
+  Product
+.content
+  - form_for [@category, @product] do |form|
+    %table.card
+      %tr
+        %th= form.label :model
+        %td= form.text_field :model
+      %tr
+        %th= form.label :name
+        %td= form.text_field :name
+      %tr
+        %th= form.label :description
+        %td= form.text_area :description
+      %tr
+        %th= form.label :price_net
+        %td= form.text_field :price_net
+      %tr
+        %th= form.label :price_gross
+        %td= form.text_field :price_gross
+    %br
+  
+    = submit_tag submit

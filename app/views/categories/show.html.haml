@@ -1,0 +1,20 @@
+%h1 Category
+
+.content
+  %table.card
+    %tr
+      %th Name:
+      %td= @category.name
+    %tr
+      %th Description header:
+      %td= @category.description_header
+    %tr
+      %th Description:
+      %td= @category.description
+  %br
+  .actions
+    = link_to 'Products', category_products_path(@category)
+    = link_to 'Delete', category_path(@category), :method => :delete, :confirm => "Do you really want to delete category with according products?"
+    -#= link_to 'Edit', edit_account_path(@account)
+  
+  

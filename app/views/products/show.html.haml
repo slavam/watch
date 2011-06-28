@@ -1,0 +1,23 @@
+%h1 Product
+.content
+  %table.card
+    %tr
+      %th Model
+      %td= @product.model
+    %tr
+      %th Name
+      %td= @product.name
+    %tr
+      %th Description
+      %td= @product.description
+    %tr
+      %th Price (net)
+      %td= @product.price_net
+    %tr
+      %th Price (gross)
+      %td= @product.price_gross
+  %br
+  .actions
+    = link_to 'Products', category_products_path(@category)
+    = link_to 'Delete', category_product_path(@category, @product), :method => :delete, :confirm => "Do you really want to delete product?"
+  
