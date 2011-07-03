@@ -1,0 +1,248 @@
+html, body {
+  width: 900px;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Calibri, Verdana, sans-serif; }
+#header {
+  font-size: 17pt;
+  background: url(../images/top_bcg.png) repeat-x;
+  text-decoration: none;
+  height: 100px;
+}
+
+#header a:hover {
+  font-weight: bold;
+  text-decoration: none; }
+
+#header a:link, a:visited {
+  color: #777777; }
+
+#header a:link.current, #header ul a:visited.current {
+  color: #777777;
+  font-weight: bold;
+}
+#navigation {
+  background-color: !mainbg;
+  padding: 0;
+  clear: both; }
+  #navigation h1 {
+    font-size: 17pt;
+    font-weight: normal;
+    margin: 0;
+    color: #00ff;
+    padding: 15px 0 15px 30px; }
+
+#catalog {
+  width: 226px;	
+  float: left;
+}
+
+#catalog h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-left: 20px;
+	margin-top: 0px;
+	padding-top: 0px;
+    color: #505050;
+    }
+	
+#line {
+  margin-left: 20px;
+  border-bottom: 2px solid #d9d9d9;	
+}
+
+
+#main {
+  margin-left: 226px;
+  background-color: #FF;
+  }
+  #main h1 {
+    background-color: #edf3fe;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    margin: 0; }
+  #main .content {
+    background-color: white;
+    padding: 10px; }
+
+#footer {
+  color: #110000;
+  border-top: solid 0px #660000;
+  font-size: 12px;
+  padding: 10px 0 50px 0;
+  text-align: center;
+  clear: both; }
+
+#tabs {
+  position: absolute;
+  top: 66px;
+  left: 380px;
+  margin: 0 57px 0 30px;
+  height: 25px;
+  padding: 0; }
+  #tabs li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    list-style: none;
+    border: none; }
+  #tabs ul {
+    margin: 0;
+    padding: 0; }
+    #tabs ul a:link, #tabs ul a:visited {
+      color: #777777;
+      font-size: 15pt;
+      float: left;
+      padding: 4px 8px 6px 8px;
+      margin: 0; }
+    #tabs ul a:link.current, #tabs ul a:visited.current {
+      color: #777777;
+      background-color: #00ff;
+      text-decoration: none;
+	  font-weight: bold;
+      margin: 0; }
+  #tabs a:link, #tabs a:visited {
+    background-color: #ffffff;
+    color: #777777;
+    text-decoration: none; }
+  #tabs a:hover {
+    color: #777777;
+    background-color: #6600;
+    }
+
+table.data {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table.data td {
+    background-color: #eeeeee;
+    font-size: 11pt;
+    text-align: left;
+    font-weight: normal;
+    padding: 3px 20px 3px 3px; }
+  table.data th {
+    background-color: #dddddd;
+    font-size: 11pt;
+    text-align: left;
+    font-weight: normal;
+    padding: 3px 20px 3px 3px; }
+
+tr.odd {
+  background-color: #eeeeee;
+}
+
+.card td, .card th {
+  text-align: left; }
+
+a:link, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.fieldWithErrors {
+  color: red; }
+
+.flash_error {
+  background-color: red; }
+
+.flash_notice {
+  background-color: green; }
+
+.test {
+  background-color: fuchsia; }
+
+.audit_time {
+  color: gray; }
+
+table.members {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+table.members td {
+  border: 1px solid white;
+}
+
+table.members tr {
+  height: 25px;
+}
+
+td.role {
+  font-weight: bold; }
+
+table.members td:first-child {
+  padding-left: 5px;
+  width: 200px; 
+  text-align: left; }
+
+table.members td {
+  width: 90px; 
+  text-align: center; }
+
+table.members {
+  font-size: 12px; }
+
+table.members tr:last-child td:last-child {
+  padding: 3px 0px 3px 0px;
+  text-align: center;
+  background-color: #e5e5e5; }
+
+table.members tr:last-child input {
+  width: 125px;
+}
+
+.attachments h4 {
+  margin-bottom: 0px;
+}
+
+.attachmentItem {
+  float: left;
+  padding: 10px 15px;
+  color: #909090;
+  height: 75px;
+  font-size: 11px;
+}
+
+.attachmentItem .thumbnail {
+  float: left;
+  width: 75px;
+  height: 75px;
+  display: table;
+  text-align: center;
+}
+
+.attachmentItem .thumbnailCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.attachmentItem .info {
+  display: table;
+  height: 75px;
+  margin-left: 90px;
+}
+
+.attachmentItem .infoCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.attachmentItem .filename {
+  font-size: 12px;
+}
+
+.attachmentItem .delete {
+  color: #909090;
+  text-decoration: underline;
+}
+
+img.shadow {
+  border-bottom: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  background: #f7f7f7;
+}
+
+a img {
+  border: none;
+}

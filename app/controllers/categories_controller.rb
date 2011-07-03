@@ -1,12 +1,15 @@
 class CategoriesController < ApplicationController
   before_filter :find_category, :only => [:show, :destroy]
+  before_filter :find_categories, :only => [:index, :show_catalog]
   def index
-    @categories = Category.order(:name)
   end
   
   def show
   end
-  
+
+  def show_catalog
+  end
+
   def new
     @category = Category.new
   end
@@ -32,5 +35,8 @@ class CategoriesController < ApplicationController
   def find_category
     @category = Category.find params[:id]
   end
-  
+
+  def find_categories
+    @categories = Category.order(:name)
+  end
 end
